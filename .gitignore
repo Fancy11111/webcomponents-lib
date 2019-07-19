@@ -3,3 +3,5 @@
 **/out/**
 **/dist/**
 **/build/**
+**/packages/**
+**/node_modules/**
