@@ -35,14 +35,10 @@ class MaterialCardWC extends HTMLElement {
       ]
     };
 
-    // TODO: Write the template code
-
     /**
      * @todo Write the template code
      * @body Need to rewrite html in material-card.html to template code + insert all data
      */
-
-    // TODO: Rewrite style from material-card.html with parameters
 
     /**
      * @todo Rewrite style with parameters
