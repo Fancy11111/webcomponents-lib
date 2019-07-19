@@ -66,15 +66,21 @@ class Timeline extends HTMLElement {
       child.setAttribute('class', 'timeline-item');
       child.innerHTML = `
         <div class="timeline-item-content">
-          <span class="tag">${element.type}</span>
+          <span class="tag" ${
+            element.type.color
+              ? `style="background-color:${element.type.color}"`
+              : ''
+          }>${element.type.text}</span>
           <time>${element.time}</time>
           <h1 style="font-size: 0.9em">${element.location}</h1>
           <p>${element.info}</p>
           ${
             element.link
               ? `<a href='${
-                  element.link
-                }' rel='noopener noreferrer' target='_blank'> Zur Website </a>`
+                  element.link.link
+                }' rel='noopener noreferrer' target='_blank'> 
+                  ${element.link.text ? element.link.text : 'Visit website'} 
+                </a>`
               : ''
           }
           <span class="circle"></span>
