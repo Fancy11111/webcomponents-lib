@@ -1,0 +1,28 @@
+{
+  "name": "webcomponents-lib",
+  "version": "1.0.0",
+  "description": "Library of web components",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fancy11111/webcomponents-lib.git"
+  },
+  "keywords": [
+    "webcomponents",
+    "js",
+    "html"
+  ],
+  "author": "Daniel Fenz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fancy11111/webcomponents-lib/issues"
+  },
+  "homepage": "https://github.com/Fancy11111/webcomponents-lib#readme",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10"
+  }
+}
