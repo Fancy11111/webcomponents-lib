@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple timeline</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="timeline.css">
+    <script type="application/javascript" src="timeline-wc.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <div class="timeline-container">
+      <div class="timeline-item">
+        <span class="tag">BRG Gröhrmühlgasse</span>
+        <time>2010-2014</time>
+        <span class="circle"></span>
+      </div>
+      <div class="timeline-item"></div>
+    </div> -->
+    <h1>Daniel Fenz</h1>
+    <div id="timeline-wrapper"></div>
+    <script type="application/javascript">
+      let timeline = document.createElement('timeline-el');
+      timeline.setAttribute('color', '#1E88E5');
+      let data = [
+        {
+          time: '2010-2014',
+          location: 'BRG Gröhrmühlgasse',
+          type: {
+            text: 'Schule'
+          },
+          info: 'Schüler',
+          link: 'http://www.brgg.at/'
+        },
+        {
+          time: '2014-15',
+          location: 'HTL Wr. Neustadt, Abteilung Informatik',
+          type: {
+            text: 'Schule'
+          },
+          info: 'Programmiergrundlagen, Python, Office-Produkte',
+          link: 'http://www.htlwrn.ac.at/'
+        },
+        {
+          time: 'Juli 2015',
+          location: 'Prinzhorn Containerboard, 2823 Pitten',
+          type: 'Pflichpraktikum',
+          info: 'Excelmakros, PL/SQL',
+          link: 'https://www.hamburger-containerboard.com/de/main/'
+        },
+        {
+          time: '2015-16',
+          location: 'HTL Wr. Neustadt, Abteilung Informatik',
+          type: {
+            text: 'Schule'
+          },
+          info: 'Java, HTML, CSS, JS, PHP',
+          link: 'http://www.htlwrn.ac.at/'
+        },
+        {
+          time: 'Juli 2016',
+          location: 'Prinzhorn Containerboard, 2823 Pitten',
+          type: 'Pflichpraktikum',
+          info: 'PL/SQL, Java, Python',
+          link: 'https://www.hamburger-containerboard.com/de/main/'
+        },
+        {
+          time: '2016-17',
+          location: 'HTL Wr. Neustadt, Abteilung Informatik',
+          type: {
+            text: 'Schule'
+          },
+          info: 'Java, SQL Server, Javascript, HTML',
+          link: 'http://www.htlwrn.ac.at/'
+        },
+        {
+          time: 'Juli 2017',
+          location: 'Boerhringer Ingelheim, 1120 Wien',
+          type: 'Ferialpraktikum',
+          info: 'SAP, Excelmakros',
+          link: 'https://www.boehringer-ingelheim.at/de'
+        },
+        {
+          time: '2017-18',
+          location: 'HTL Wr. Neustadt, Abteilung Informatik',
+          type: {
+            text: 'Schule'
+          },
+          info: 'C#, SQL Server, TSQL, MongoDB, Node.js, Angular',
+          link: 'http://www.htlwrn.ac.at/'
+        },
+        {
+          time: 'Juli 2018',
+          location: 'Boerhringer Ingelheim, 1120 Wien',
+          type: {
+            text: 'Ferialpraktikum'
+          },
+          info: 'SAP, Excelmakros',
+          link: 'https://www.boehringer-ingelheim.at/de'
+        },
+        {
+          time: '2018-19',
+          location: 'HTL Wr. Neustadt, Abteilung Informatik',
+          type: {
+            text: 'Schule'
+          },
+          info: 'C#, Oracle SQL Server, PL/SQL, MongoDB, Node.js, C++',
+          link: 'http://www.htlwrn.ac.at/'
+        }
+      ];
+      timeline.setAttribute('data', JSON.stringify(data));
+      document.getElementById('timeline-wrapper').appendChild(timeline);
+    </script>
+  </body>
+</html>
