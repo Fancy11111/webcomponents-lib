@@ -277,4 +277,4 @@ class Timeline extends HTMLElement {
   }
 }
 
-customElements.define('timeline-el', Timeline);
+customElements.define('timeline-wc', Timeline);

@@ -19,6 +19,8 @@ I oriented myself at the [React Timeline Component tutorial](https://www.florin-
 
 ### Attributes
 
+Tag: timeline-wc
+
 - color: The color used in the tags, the middle line and the timeline element borders
 - data: An array of objects used to fill the timeline with information
 
